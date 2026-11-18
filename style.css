@@ -1154,3 +1154,18 @@ footer p {
         display: flex !important;
     }
 }
+
+/* =====================================
+   SECTION-BASED NAVIGATION
+===================================== */
+
+/* Hide all sections by default */
+main > section {
+    display: none;
+}
+
+/* Show only the selected section */
+main > section.active-section {
+    display: block;
+}
+
