@@ -1140,3 +1140,17 @@ footer p {
         display: flex;
     }
 }
+/* Fix checkbox visibility on laptop and desktop */
+@media (min-width: 769px) {
+    #menu-toggle {
+        display: none !important;
+    }
+
+    .menu-icon {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+    }
+}
