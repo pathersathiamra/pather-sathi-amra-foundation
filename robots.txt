@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dasdipam063-glitch.github.io/pather-sathi-amra-foundation/sitemap.xml
