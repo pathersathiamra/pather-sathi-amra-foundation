@@ -1159,13 +1159,14 @@ footer p {
    SECTION-BASED NAVIGATION
 ===================================== */
 
-/* Hide all sections by default */
+/* =====================================
+   SECTION-BASED NAVIGATION
+===================================== */
+
 main > section {
-    display: none;
+    display: none !important;
 }
 
-/* Show only the selected section */
 main > section.active-section {
-    display: block;
+    display: block !important;
 }
-
