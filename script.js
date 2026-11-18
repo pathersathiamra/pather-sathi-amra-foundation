@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const menuToggle = document.getElementById("menu-toggle");
+
     const navLinks = document.querySelectorAll(
         '.nav-links a, .logo, .hero-button, .about-button'
     );
@@ -12,35 +13,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const selectedSection = document.getElementById(sectionId);
 
-        // Check that the requested section exists inside main
         if (!selectedSection || !selectedSection.matches("main > section")) {
             return;
         }
 
-        // Hide all sections and show the selected section
+        // Hide every section first
         sections.forEach(section => {
             section.classList.remove("active-section");
+            section.style.display = "none";
         });
 
+        // Display only the selected section
         selectedSection.classList.add("active-section");
+        selectedSection.style.display = "block";
 
-        // Close the mobile dropdown
+        // Close mobile dropdown
         if (menuToggle) {
             menuToggle.checked = false;
         }
 
-        // Update the browser URL
+        // Update URL
         if (updateHistory) {
             history.pushState(null, "", "#" + sectionId);
         }
 
-        // Start the selected section from the top
+        // Scroll to top
         window.scrollTo(0, 0);
     }
 
-    // Handle navigation clicks
+    // Navigation clicks
     navLinks.forEach(link => {
-
         link.addEventListener("click", function (event) {
 
             const href = this.getAttribute("href");
@@ -55,18 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
         });
-
     });
 
-    // Handle browser back and forward buttons
+    // Browser back and forward
     window.addEventListener("popstate", function () {
-
         const sectionId = window.location.hash.substring(1) || "home";
         showSection(sectionId, false);
-
     });
 
-    // Open the correct section if the URL already has a section hash
+    // Initial section
     const initialSection = window.location.hash.substring(1) || "home";
     showSection(initialSection, false);
 
