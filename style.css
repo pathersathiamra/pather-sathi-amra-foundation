@@ -1774,5 +1774,121 @@ main > section.active-section {
         max-width: 100%;
     }
 }
+/* JOIN US SECTION */
+
+.join-us {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f4faf7, #ffffff);
+}
+
+.join-us-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.join-eyebrow {
+    color: #145c43;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.join-us-container h2 {
+    font-size: clamp(28px, 4vw, 45px);
+    margin-bottom: 20px;
+}
+
+.join-intro {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.join-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.join-card {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 18px;
+    border: 1px solid #e3eee8;
+    box-shadow: 0 8px 25px rgba(20, 92, 67, 0.08);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.join-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(20, 92, 67, 0.14);
+}
+
+.join-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f5ee;
+    color: #145c43;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.join-card h3 {
+    color: #145c43;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.join-card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.join-button {
+    display: inline-block;
+    background: #145c43;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.join-button:hover {
+    background: #0c4330;
+    transform: translateY(-3px);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .join-us {
+        padding: 55px 18px;
+    }
+
+    .join-options {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .join-card {
+        padding: 30px 22px;
+    }
+
+    .join-intro {
+        font-size: 16px;
+    }
+}
 
 
