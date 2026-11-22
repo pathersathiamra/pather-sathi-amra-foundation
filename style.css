@@ -1365,7 +1365,15 @@ main > section.active-section {
     flex-direction: column;
     flex-grow: 1;
 }
-
+/* Better team portraits on mobile */
+@media (max-width: 500px) {
+    .team-card img {
+        height: 300px;
+        object-fit: contain;
+        object-position: center center;
+        background: #f7faf7;
+    }
+}
 
 
 
