@@ -1890,5 +1890,17 @@ main > section.active-section {
         font-size: 16px;
     }
 }
+.join-icon {
+    width: 100px;
+    height: 100px;
+    background: #e4f5ed;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 40px;
+    color: #006b50;
+}
 
 
