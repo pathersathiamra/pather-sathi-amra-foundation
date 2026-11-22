@@ -1339,3 +1339,22 @@ main > section.active-section {
         font-size: 21px;
     }
 }
+/* Consistent team card alignment */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
