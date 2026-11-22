@@ -1170,3 +1170,172 @@ main > section {
 main > section.active-section {
     display: block !important;
 }
+/* =========================================
+   17. UPDATED TEAM SECTION
+========================================= */
+
+/* Team categories */
+.team-category {
+    max-width: 1100px;
+    margin: 55px auto 0;
+}
+
+.team-category h3 {
+    text-align: center;
+    color: var(--primary);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Team member cards */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.team-card {
+    background: #f7faf7;
+    border: 1px solid var(--light-border);
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(20, 92, 67, 0.12);
+}
+
+/* Uniform portrait sizes */
+.team-card img {
+    width: 100%;
+    height: 345px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.team-info {
+    padding: 20px;
+}
+
+.team-info h4 {
+    font-size: 18px;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.team-info span {
+    display: block;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.team-info p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Volunteers and supporters */
+.team-name-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.team-name-card {
+    background: #f7faf7;
+    border: 1px solid var(--light-border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.team-name-card:hover {
+    transform: translateY(-3px);
+    background: #eaf4ee;
+}
+
+/* Explore Next */
+.explore-next {
+    max-width: 1100px;
+    margin: 70px auto 0;
+    text-align: right;
+}
+
+.explore-next-divider {
+    height: 1px;
+    background: var(--light-border);
+    margin-bottom: 25px;
+}
+
+.explore-next-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    color: var(--primary);
+    transition: transform 0.3s ease;
+}
+
+.explore-next-link span {
+    font-size: 12px;
+    color: var(--text);
+    letter-spacing: 1px;
+}
+
+.explore-next-link strong {
+    font-size: 16px;
+}
+
+.explore-next-link:hover {
+    transform: translateX(5px);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-card img {
+        height: 280px;
+    }
+
+    .team-name-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .explore-next {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-card img {
+        height: 320px;
+    }
+
+    .team-name-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-category h3 {
+        font-size: 21px;
+    }
+}
