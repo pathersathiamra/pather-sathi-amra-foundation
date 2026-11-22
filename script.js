@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
 
     const navLinks = document.querySelectorAll(
-        '.nav-links a, .logo, .hero-button, .about-button'
+        '.nav-links a, .logo, .hero-button, .about-button, .explore-next-link'
     );
 
     const sections = document.querySelectorAll("main > section");
@@ -51,7 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const sectionId = href.substring(1);
 
-            if (document.getElementById(sectionId)?.matches("main > section")) {
+            const targetSection = document.getElementById(sectionId);
+
+            if (targetSection && targetSection.matches("main > section")) {
                 event.preventDefault();
                 showSection(sectionId);
             }
