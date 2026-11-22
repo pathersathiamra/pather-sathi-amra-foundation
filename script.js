@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const menuToggle = document.getElementById("menu-toggle");
 
-    const navLinks = document.querySelectorAll(
-        '.nav-links a, .logo, .hero-button, .about-button, .explore-next-link'
-    );
+  const navLinks = document.querySelectorAll(
+    '.nav-links a, .logo, .hero-button, .about-button, .explore-next-link, .join-button'
+);
 
     const sections = document.querySelectorAll("main > section");
 
