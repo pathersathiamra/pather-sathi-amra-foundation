@@ -1632,6 +1632,147 @@ main > section.active-section {
     }
 
 }
+/* =====================================
+   JOIN US SECTION - IMPROVED DESIGN
+====================================== */
 
+.join-us {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f4faf7, #ffffff);
+}
+
+.join-us-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.join-eyebrow {
+    color: #145c43;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.join-us-container h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #1b2923;
+    margin-bottom: 20px;
+}
+
+.join-intro {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Cards Layout */
+
+.join-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.join-card {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 18px;
+    border: 1px solid #e3eee8;
+    box-shadow: 0 8px 25px rgba(20, 92, 67, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.join-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 35px rgba(20, 92, 67, 0.14);
+}
+
+/* Icons */
+
+.join-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f5ee;
+    color: #145c43;
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
+
+.join-card h3 {
+    font-size: 1.5rem;
+    color: #145c43;
+    margin-bottom: 15px;
+}
+
+.join-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Contact Button */
+
+.join-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #145c43;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.join-button:hover {
+    background: #0c4330;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(20, 92, 67, 0.2);
+}
+
+/* Mobile Design */
+
+@media (max-width: 768px) {
+
+    .join-us {
+        padding: 55px 18px;
+    }
+
+    .join-options {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .join-card {
+        padding: 30px 22px;
+    }
+
+    .join-intro {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .join-card h3 {
+        font-size: 1.35rem;
+    }
+
+    .join-button {
+        width: auto;
+        max-width: 100%;
+    }
+}
 
 
