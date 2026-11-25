@@ -1942,3 +1942,38 @@ main > section.active-section {
         grid-template-columns: 1fr;
     }
 }
+/* Fix Past Event Grid Layout */
+
+.past-event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.past-event-card {
+    width: 100%;
+    min-width: 0;
+}
+
+/* Event Images */
+.past-event-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .past-event-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .past-event-grid {
+        grid-template-columns: 1fr;
+    }
+}
