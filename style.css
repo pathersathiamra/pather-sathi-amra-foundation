@@ -1977,3 +1977,16 @@ main > section.active-section {
         grid-template-columns: 1fr;
     }
 }
+/* Desktop: force every past event into one grid column */
+@media (min-width: 901px) {
+    .past-event-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .past-event-grid > .past-event-card {
+        grid-column: auto !important;
+        width: 100% !important;
+        max-width: none !important;
+    }
+}
