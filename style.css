@@ -1902,5 +1902,10 @@ main > section.active-section {
     font-size: 40px;
     color: #006b50;
 }
-
+.past-event-card > img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
 
