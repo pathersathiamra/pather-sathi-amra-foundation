@@ -1990,3 +1990,48 @@ main > section.active-section {
         max-width: none !important;
     }
 }
+/* Upcoming Event - Two Column Layout */
+.event-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Poster on the left */
+.event-image {
+    width: 100%;
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+/* Event details on the right */
+.event-content h3,
+.event-content .event-date,
+.event-content p:not(.event-date):not(.event-message) {
+    margin-top: 12px;
+}
+
+.event-message {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+    .event-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+}
